@@ -12,10 +12,12 @@ class Meetup {
         console.log('City: '+ this.location );
     }
 }
+
 Meetup.admin = "Adam";
 Meetup.getMembers = function () {
     console.log(Meetup.admin+ ' Returned Members');
 }
+
 let jsMeetup = new Meetup('JS', 'Blr');
 console.log(Meetup.admin);   // Adam
 console.log(jsMeetup.admin); // undefined
