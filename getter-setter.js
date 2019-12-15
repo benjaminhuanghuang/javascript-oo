@@ -1,3 +1,7 @@
+/*
+ECMAScript 5 (2009) introduced Getter and Setters.
+*/
+
 class Meetup {
     constructor(name) {
         this._name = name;
