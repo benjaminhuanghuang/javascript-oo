@@ -6,9 +6,12 @@ class Meetup {
     start() {
         console.log(this.name + 'Meetup ' + 'is started at ' + this.location);
     }
+    /*
+    The static method in ES6 
+    */
     static getAddress() {
         console.log('Returned Address');
-        /* this.location will return undefined */
+        /* this.location will return undefined ! */
         console.log('City: '+ this.location );
     }
 }
