@@ -10,6 +10,8 @@ function Book(title, author, year) {
 Book.prototype.getSummary =  function(){
     return `${this.title} written by ${this.author}`;
 }
+const book1 = new Book("Book One", "John", 1977);
+console.log(book1);
 
 // Magazine Contructor
 function Magazine(title, author, year, month){
@@ -18,6 +20,7 @@ function Magazine(title, author, year, month){
 }
 const mag1 = new Magazine("Mag one", "Doe", "2018", 'Jan'); // For now, the __proto__ on mag1 is Object
 // mag1.getSummary is not a function 
+console.log("mag1", mag1);
 
 // Inherit Prototype
 // https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Objects/Inheritance
@@ -25,6 +28,7 @@ const mag1 = new Magazine("Mag one", "Doe", "2018", 'Jan'); // For now, the __pr
 Magazine.prototype = Object.create(Book.prototype);
 
 const magazine1 = new Magazine("Mag one", "Doe", "2018", 'Jan');
+console.log("magazine1 got Book.prototype", magazine1);
 
 // Use Magazine Contructor
 Magazine.prototype.constuctor = Magazine;
